@@ -44,7 +44,7 @@ export default function Footer() {
         contentLabel="Rules"
       >
         <div className="self-stretch flex justify-center mb-12 md:justify-between">
-          <h5 className="uppercase text-modal">Rules</h5>
+          <h5 className="uppercase text-modal leading-default">Rules</h5>
           <button onClick={closeModal} aria-label="Close modal" className="hidden md:block">
             <img src={iconClose} alt="Close" aria-hidden="true" />
           </button>
