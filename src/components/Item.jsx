@@ -17,7 +17,6 @@ export default function Item({ item, isWinner }) {
   return (
     <div
       className="w-[130px] h-[124px] rounded-full px-4 pt-6 pb-3 md:w-[198px] md:h-[193px] md:px-6 md:pt-8 md:pb-5 transition-shadow"
-      aria-label={item.type}
       style={inlineStyles}
     >
       <div className="bg-imageContainer h-full rounded-full flex justify-center items-center shadow-imageContainer">
