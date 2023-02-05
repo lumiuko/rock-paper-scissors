@@ -49,14 +49,14 @@ export default function Game({ currentPick, playAgain }) {
     <>
       <div className="flex justify-center mt-[4.25rem] gap-[4.25em]">
         <ItemContainer text="You picked">
-          <Item item={currentPick} isWinner={hasWon} />
+          <Item item={currentPick} isWinner={hasWon && isResultShown} />
         </ItemContainer>
 
         <div className="hidden md:block">{result}</div>
 
         <ItemContainer text="The House picked">
           {enemyPick ? (
-            <Item item={enemyPick} isWinner={hasLost} />
+            <Item item={enemyPick} isWinner={hasLost && isResultShown} />
           ) : (
             <div className="w-[130px] h-[124px] rounded-full bg-placeholder md:w-[198px] md:h-[193px]"></div>
           )}
