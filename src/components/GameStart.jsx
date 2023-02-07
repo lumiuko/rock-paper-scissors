@@ -3,7 +3,12 @@ import data from '../data'
 
 export default function GameStart(props) {
   const buttons = data.map((item, index) => (
-    <button key={index} onClick={() => props.setPick(item)} className="rounded-full transition-all hover:shadow-item">
+    <button
+      key={index}
+      onClick={() => props.setPick(item)}
+      className="rounded-full transition-all hover:shadow-item"
+      aria-label={item.type}
+    >
       <Item item={item} />
     </button>
   ))

@@ -1,6 +1,6 @@
 export default function Item({ item, isWinner }) {
   const winnerShadow = `
-    0px 0px 0px 30px rgba(255,255,255,0.05),
+    ,0px 0px 0px 30px rgba(255,255,255,0.05),
     0px 0px 0px 60px rgba(255,255,255,0.02),
     0px 0px 0px 100px rgba(255,255,255,0.02)
   `
@@ -9,7 +9,7 @@ export default function Item({ item, isWinner }) {
     backgroundColor: item.primaryColor,
     boxShadow: `
       0px 6px 0px 0px ${item.secondaryColor}, 
-      0px 3px 3px rgba(0, 0, 0, 0.196706),
+      0px 3px 3px rgba(0, 0, 0, 0.196706)
       ${isWinner ? winnerShadow : ''}
     `
   }
